@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" />
+
+    <!-- <node pkg="obstacle_detector" type="segmentation" name="segmentation" /> -->
+    <!-- <node pkg="obstacle_detector" type="clustering" name="clustering" /> -->
+    <node pkg="obstacle_detector" type="boundingbox" name="boundingbox" />
+
+</launch>
